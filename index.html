@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Rincão</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#"><i class="#"></i>Loja Rincão</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-menu-item dropdown-item" href="#">Jogos</a></li>
+                            <li><a class="dropdown-menu-item dropdown-item" href="#">Hardware</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-menu-item dropdown-item" href="#">Mais</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex me-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                </form>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div id="heroCarousel" class="carousel slide container my-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#" data-bs-slide-to="0" class="active" aria-current="true" aria-label="1"></button>
+            <button type="button" data-bs-target="#" data-bs-slide-to="1" aria-label="2"></button>
+            <button type="button" data-bs-target="#" data-bs-slide-to="2" aria-label="3"></button>
+        </div>
+        <div class="carousel-inner rounded-4 shadow">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="img/pc.jpg" class="d-block w-100" alt="PC">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-3">
+                    <h5>PCs completos</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="img/fc.jpg" class="d-block w-100" alt="FC">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-3">
+                    <h5>FC 27</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="img/f1.jpg" class="d-block w-100" alt="F1">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-3">
+                    <h5>F1 25</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+    <main class="container my-5" id="produtos">
+        <h2 class="text-center mb-4 font-weight-bold">Destaques</h2>
+        
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="img/pc2.jpg" class="card-img-top" alt="PC Gamer">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">PC GAMER RINCÃO PRO</h5>
+                        <p class="card-text text-muted small">Intel i7, 32GB RAM, SSD 1TB, RTX 4070.</p>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <span class="fs-5 fw-bold text-success">R$ 7.899,00</span>
+                            <button class="btn btn-outline-primary btn-sm"><i class="bi bi-cart-plus"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="img/controle.webp" class="card-img-top" alt="Controle">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">CONTROLE SEM FIO</h5>
+                        <p class="card-text text-muted small">Oferece mais imersão nos jogos e bateria de longa duração.</p>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <span class="fs-5 fw-bold text-success">R$ 450,00</span>
+                            <button class="btn btn-outline-primary btn-sm"><i class="bi bi-cart-plus"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="img/headset.webp" class="card-img-top" alt="Headset">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">HEADSET GAMER</h5>
+                        <p class="card-text text-muted small">Microfone com cancelamento de ruído.</p>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <span class="fs-5 fw-bold text-success">R$ 320,00</span>
+                            <button class="btn btn-outline-primary btn-sm"><i class="bi bi-cart-plus"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Loja Rincão</h5>
+                    <p>Especializada em tecnologia, peças e os melhores jogos do mercado.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Para descobrir</h5>
+                    <p><a href="#" class="text-white text-decoration-none">Home</a></p>
+                    <p><a href="#produtos" class="text-white text-decoration-none">Sobre</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Categorias</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Contato</h5>
+                    <p><i class="#"></i> lojarincao@gmail.com</p>
+                    <p><i class="#"></i> (11) 94902-0127</p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-start mb-0">2026 Loja Rincão</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
